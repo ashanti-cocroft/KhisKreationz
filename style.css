@@ -158,7 +158,7 @@ body::before {
   object-fit: cover;
   border: 1px solid var(--color-ink);
   flex-shrink: 0;
-  box-shadow: 2px 2px 0 var grey;
+  box-shadow: 2px 2px 0 var(--color-ink);
 }
 
 .profile-text {
@@ -167,12 +167,13 @@ body::before {
 
 .profile-text h2 {
   font-family: var(--font-serif-display);
-  font-size: 2em;
+  font-size: 2.2em;
   font-weight: 900;
   text-transform: uppercase;
   border-bottom: 3px double var(--color-ink); /* Double underline */
   padding-bottom: 5px;
   margin-bottom: 10px;
+  letter-spacing: -1px;
 }
 
 .bio-text {
@@ -226,10 +227,11 @@ body::before {
   padding: 0 10px 10px;
 }
 .schedule-day {
-  font-size: 1.8em; /* Match mockup font size for day */
+  font-size: 2em; /* Match mockup font size for day */
   font-weight: 900;
-  margin-top: 5px;
+  margin-top: 8px;
   line-height: 1;
+  letter-spacing: -1px;
 }
 .schedule-time {
   font-size: 1em;
@@ -239,10 +241,11 @@ body::before {
   line-height: 1.2;
 }
 .closed-day {
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: 900;
-  margin-top: 15px;
+  margin-top: 18px;
   line-height: 1;
+  letter-spacing: -1px;
 }
 .closed {
   color: var(--color-pink);
@@ -435,31 +438,32 @@ body::before {
   .profile-section {
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 0;
   }
   .profile-images {
     width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 0;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .large-image {
-    order: 1;
     width: 100%;
     max-width: 300px;
     height: auto;
-    margin-top: 15px;
+    margin-top: 0;
   }
   .small-image {
-    width: 120px;
-    height: 140px;
-    aspect-ratio: auto;
+    width: calc(50% - 150px);
+    max-width: 110px;
+    height: auto;
+    aspect-ratio: 110/170;
   }
   .profile-text {
     width: 100%;
     text-align: center;
+    margin-top: 15px;
   }
   .profile-text h2 {
     text-align: center;
