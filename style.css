@@ -453,7 +453,7 @@ body::before {
   .large-image {
     width: auto;
     max-width: 250px;
-    height: auto;
+    height: 270px;
     margin-top: 0;
     order: 2;
     flex-shrink: 0;
