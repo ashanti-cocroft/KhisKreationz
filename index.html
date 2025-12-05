@@ -3,426 +3,199 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hair Booking Website</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Kreationz By Khi - The Glamour Press</title>
+    <!-- External assets needed for styling and icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="page-container paper-texture">
-      <!-- Navigation -->
-      <nav class="main-nav">
-        <div class="nav-content">
-          <a href="#hero" class="nav-logo">The Gazette</a>
-          <button class="mobile-menu-toggle" aria-label="Menu">☰</button>
-          <div class="nav-links">
-            <a href="#profile">About</a>
-            <a href="#policies">Policies</a>
-            <a href="#services">Services</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#business">Contact</a>
-            <a href="#book-now" class="nav-book-btn">Book Now</a>
-          </div>
+    <!-- Sparkle animation elements -->
+    <div class="sparkle" style="top: 10%; left: 15%; animation-delay: 0s"></div>
+    <div
+      class="sparkle"
+      style="top: 30%; right: 20%; animation-delay: 1s"
+    ></div>
+    <div
+      class="sparkle"
+      style="bottom: 20%; left: 25%; animation-delay: 2s"
+    ></div>
+    <div
+      class="sparkle"
+      style="top: 60%; right: 15%; animation-delay: 1.5s"
+    ></div>
+
+    <main class="newspaper-container">
+      <!-- MASTHEAD -->
+      <header class="masthead">
+        <p class="masthead-pretitle">Welcome to My Booking Site</p>
+        <div class="masthead-main-title">HAIR SALON</div>
+        <p class="masthead-subtitle">BY KREATIONZ BY KHI</p>
+        <p class="masthead-location">LOCATED IN THE MOBILE, AL AREA</p>
+      </header>
+
+      <!-- STYLIST PROFILE SECTION (3 Columns: Images, Main Image, Text) -->
+      <section class="profile-section">
+        <div class="profile-images">
+          <!-- Two small images, stacked (Hair Tools Placeholder) -->
+          <img
+            src="https://placehold.co/100x120/000000/ffffff?text=TOOLS"
+            alt="Hair Style Example 1"
+            class="small-image"
+          />
+          <img
+            src="https://placehold.co/100x120/000000/ffffff?text=PRODUCTS"
+            alt="Hair Style Example 2"
+            class="small-image"
+          />
         </div>
-      </nav>
 
-      <!-- Hero Masthead -->
-      <section class="hero" id="hero">
-        <div class="edition-banner">
-          <div class="edition-info">
-            Vol. LXXXVII • No. 143 • Established 1938
-          </div>
-        </div>
-        <h1 class="logo-title">The Beauty Gazette</h1>
-        <p class="subtitle">All The Glamour That's Fit To Print</p>
-        <div class="date-line">
-          <span>Thursday, December 4, 2025</span>
-        </div>
-      </section>
+        <!-- One large image -->
+        <img
+          src="images/copy-1.png"
+          alt="Khi, owner of Kreationz By Khi"
+          class="large-image"
+          onerror="this.onerror=null;this.src='https://placehold.co/300x400/c99400/ffffff?text=KHI+Stylist';"
+        />
 
-      <!-- Profile Section -->
-      <section class="profile-section" id="profile">
-        <div class="corner-ornament top-left"></div>
-        <div class="corner-ornament top-right"></div>
-        <div class="corner-ornament bottom-left"></div>
-        <div class="corner-ornament bottom-right"></div>
-
-        <div class="profile-header">
-          <div class="profile-image-container">
-            <img
-              src="images/ownpic.jpeg"
-              alt="Proprietor"
-              class="profile-image"
-              onerror="this.src='https://placehold.co/200x200/f4f1e8/1a1a1a?text=Portrait';"
-            />
-          </div>
-          <div class="welcome-text">
-            <h2>A Letter from the Proprietor</h2>
-            <div class="byline">By: [Your Name], Master Beautician</div>
-          </div>
-        </div>
-        <p class="bio-text">
-          Welcome, distinguished guests, to our esteemed establishment of beauty
-          and refinement. Since our founding in days of yore, we have dedicated
-          ourselves to the noble pursuit of enhancing natural elegance through
-          time-honored techniques married with modern innovations. Our salon
-          represents the pinnacle of cosmetic artistry, where each client
-          receives personalized attention befitting royalty. Step through our
-          doors and experience the transformation that has made us the most
-          celebrated beauty parlor in the city. Every treatment is a
-          masterpiece, every appointment a journey to radiance. [Replace this
-          with your personal story, expertise, and what makes your salon unique.
-          Share your passion and vision!]
-        </p>
-      </section>
-
-      <div class="ornamental-divider">✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦</div>
-
-      <!-- Policies Section -->
-      <div class="section-header">
-        <h2 class="section-title">Establishment Policies</h2>
-        <p class="section-subtitle">
-          Terms & Conditions of Distinguished Service
-        </p>
-      </div>
-
-      <section class="policies-container" id="policies">
-        <div class="policies-grid">
-          <div class="policy-card">
-            <span class="policy-icon">⏱️</span>
-            <h3 class="policy-title">Cancellations</h3>
-            <p class="policy-text">
-              We kindly request 24 hours advance notice for appointment
-              cancellations. Appointments cancelled within 24 hours may incur a
-              courtesy fee to compensate for the reserved time slot. We
-              understand emergencies occur and appreciate your cooperation in
-              maintaining our schedule for all valued patrons.
-            </p>
-          </div>
-
-          <div class="policy-card">
-            <span class="policy-icon">💵</span>
-            <h3 class="policy-title">Payments</h3>
-            <p class="policy-text">
-              Payment is graciously accepted upon completion of services. We
-              honor cash, personal checks, and modern electronic payment methods
-              including credit cards and digital wallets. Gratuities are
-              appreciated but never expected for exceptional service.
-            </p>
-          </div>
-
-          <div class="policy-card">
-            <span class="policy-icon">🚫</span>
-            <h3 class="policy-title">Guest Policy</h3>
-            <p class="policy-text">
-              Our salon maintains a private, tranquil atmosphere conducive to
-              relaxation and beauty treatments. Guests and companions are
-              welcome by prior arrangement only to ensure serenity for all
-              patrons receiving services.
-            </p>
-          </div>
-
-          <div class="policy-card">
-            <span class="policy-icon">⏰</span>
-            <h3 class="policy-title">Appointments</h3>
-            <p class="policy-text">
-              Punctuality is deeply appreciated as it respects both your time
-              and that of fellow clients. Late arrivals may result in
-              abbreviated services to honor subsequent appointments. We
-              recommend arriving 5-10 minutes early for your comfort.
-            </p>
-          </div>
+        <div class="profile-text">
+          <h2>MEET YOUR HAIR STYLIST</h2>
+          <p class="bio-text">
+            I'm Khi, your go-to hair expert! I'm here to slay your look with the
+            latest trends and styles. Whether you're after bold colors, sleek
+            cuts, or those Insta-worthy waves, I've got you covered. Let's get
+            you feeling fierce and fabulous! I'm so grateful for every amazing
+            client who trusts me with their look and I can't wait to meet new
+            faces.
+          </p>
         </div>
       </section>
 
-      <div class="ornamental-divider">✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦</div>
+      <!-- BUSINESS INFO & FEATURE SECTION (3 Columns) -->
+      <section class="info-section">
+        <div class="info-column hours-column">
+          <h3>BUSINESS HOURS</h3>
+          <div class="hours-content">
+            <p class="schedule-day">MON - WED</p>
+            <p class="schedule-time">7:00 AM - 6:00 PM</p>
+            <p class="schedule-day">THU - FRI</p>
+            <p class="schedule-time">7:00 AM - 4:00 PM</p>
+            <p class="schedule-day closed-day">SAT - SUN</p>
+            <p class="closed">CLOSED</p>
+          </div>
+        </div>
 
-      <!-- Services Section -->
-      <div class="section-header">
-        <h2 class="section-title">Services</h2>
-        <p class="section-subtitle">
-          Premier Beauty Treatments & Transformations
-        </p>
-      </div>
+        <div class="info-column contact-column">
+          <h4>CONTACT INFORMATION</h4>
+          <p><span>(251) 307-4172</span></p>
+          <p><span>TAKHIYLIW@gmail.com</span></p>
 
-      <section class="services-container" id="services">
-        <div class="service-badges">
-          <div class="service-badge">💅<br />Manicure<br />& Pedicure</div>
-          <div class="service-badge">💇‍♀️<br />Hair<br />Styling</div>
-          <div class="service-badge">💄<br />Makeup<br />Artistry</div>
-          <div class="service-badge">👁️<br />Lash<br />Extensions</div>
-          <div class="service-badge">✨<br />Waxing<br />Services</div>
+          <h4 class="social-title">LOCATION</h4>
+          <div class="location-info">
+            <p>1234 Sunset Boulevard</p>
+            <p>Los Angeles, CA 91234</p>
+            <p>United States</p>
+          </div>
+
+          <h4 class="social-title">SOCIAL MEDIA</h4>
+          <div class="social-links-info">
+            <p><i class="fab fa-instagram"></i> @kreationzbykhi</p>
+            <p><i class="fab fa-facebook-f"></i> /khiskreationz</p>
+            <p><i class="fab fa-x-twitter"></i> @khis_style</p>
+            <p><i class="fab fa-tiktok"></i> @khis_kreationz</p>
+          </div>
+        </div>
+
+        <div class="info-column feature-column">
+          <h4>FEATURE FRIDAY</h4>
+          <p class="feature-text">
+            Each Friday, we post our fave client photo. Want in? Just tag us!
+            Follow our Instagram page to see if you make the cut.
+          </p>
         </div>
       </section>
 
-      <div class="ornamental-divider">✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦</div>
-
-      <!-- Gallery Section -->
-      <div class="section-header">
-        <h2 class="section-title">Society Pages</h2>
-        <p class="section-subtitle">Distinguished Client Transformations</p>
-      </div>
-
-      <section class="gallery-container" id="gallery">
-        <p class="gallery-callout">
-          ✦ Witness the Artistry ✦ Our Finest Work Displayed ✦
-        </p>
-
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <img
-              src="images/client.png"
-              alt="Client Transformation"
-              class="gallery-image"
-              onerror="this.src='https://placehold.co/400x350/f4f1e8/1a1a1a?text=Beauty+Portrait';"
-            />
-            <p class="gallery-caption">Exquisite Nail Artistry</p>
-          </div>
-
-          <div class="gallery-item">
-            <img
-              src="images/client.png"
-              alt="Client Transformation"
-              class="gallery-image"
-              onerror="this.src='https://placehold.co/400x350/f4f1e8/1a1a1a?text=Beauty+Portrait';"
-            />
-            <p class="gallery-caption">Elegant Coiffure</p>
-          </div>
-
-          <div class="gallery-item">
-            <img
-              src="images/client.png"
-              alt="Client Transformation"
-              class="gallery-image"
-              onerror="this.src='https://placehold.co/400x350/f4f1e8/1a1a1a?text=Beauty+Portrait';"
-            />
-            <p class="gallery-caption">Stunning Cosmetics</p>
-          </div>
-
-          <div class="gallery-item">
-            <img
-              src="images/client4.jpg"
-              alt="Client Transformation"
-              class="gallery-image"
-              onerror="this.src='https://placehold.co/400x350/f4f1e8/1a1a1a?text=Beauty+Portrait';"
-            />
-            <p class="gallery-caption">Perfect Lash Application</p>
-          </div>
-
-          <div class="gallery-item">
-            <img
-              src="images/client5.jpg"
-              alt="Client Transformation"
-              class="gallery-image"
-              onerror="this.src='https://placehold.co/400x350/f4f1e8/1a1a1a?text=Beauty+Portrait';"
-            />
-            <p class="gallery-caption">Flawless Grooming</p>
-          </div>
-
-          <div class="gallery-item">
-            <img
-              src="images/client6.jpg"
-              alt="Client Transformation"
-              class="gallery-image"
-              onerror="this.src='https://placehold.co/400x350/f4f1e8/1a1a1a?text=Beauty+Portrait';"
-            />
-            <p class="gallery-caption">Refined Elegance</p>
-          </div>
-        </div>
-      </section>
-
-      <div class="ornamental-divider">✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦</div>
-
-      <!-- Business Info -->
-      <section class="business-section" id="business">
-        <h2 class="business-title">Establishment Information</h2>
-        <div class="info-grid">
-          <div class="info-item">
-            <span class="info-icon">📅</span>
-            <h4>Hours</h4>
-            <p>
-              Monday - Friday: 9:00 AM - 7:00 PM<br />
-              Saturday: 9:00 AM - 6:00 PM<br />
-              Sunday: By Appointment Only
-            </p>
-          </div>
-
-          <div class="info-item">
-            <span class="info-icon">📞</span>
-            <h4>Telephone</h4>
-            <p>(555) 123-4567</p>
-          </div>
-
-          <div class="info-item">
-            <span class="info-icon">📧</span>
-            <h4>Electronic Mail</h4>
-            <p>info@beautygazette.com</p>
-          </div>
-
-          <div class="info-item">
-            <span class="info-icon"><i class="fab fa-instagram"></i></span>
-            <h4>Instagram</h4>
-            <p>
-              <a href="https://instagram.com/kreationzbykhi" target="_blank"
-                >@YourSalonHandle</a
-              >
-            </p>
-          </div>
-
-          <div class="info-item">
-            <span class="info-icon"><i class="fab fa-facebook-f"></i></span>
-            <h4>Facebook</h4>
-            <p>
-              <a href="https://facebook.com/khiskreationz" target="_blank"
-                >Your Salon Page</a
-              >
-            </p>
-          </div>
-
-          <div class="info-item">
-            <span class="info-icon">⚠️</span>
-            <h4>Important Notice</h4>
-            <p>
-              First-time clients receive a complimentary consultation. Please
-              arrive with clean, product-free hair/nails for optimal results.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Book Now -->
-      <section class="book-now-section" id="book-now">
-        <a href="https://yourbookinglink.com" class="book-now-btn"
-          >Reserve Your Appointment</a
+      <!-- BOOKING POLICIES HEADER -->
+      <div class="policies-header-bar">
+        <a href="https://yourbookinglink.com" class="book-btn-small"
+          >BOOK TODAY</a
         >
+        <div class="policies-title-wrapper">
+          <h2>BOOKING POLICIES</h2>
+          <p>IMPORTANT INFO FOR A SEAMLESS EXPERIENCE</p>
+        </div>
+        <a href="https://yourbookinglink.com" class="book-btn-small"
+          >BOOK TODAY</a
+        >
+      </div>
+
+      <!-- POLICY GRID SECTION (4 Columns) -->
+      <section class="policies-grid">
+        <div class="policy-card">
+          <h3 class="policy-title">PAYMENT</h3>
+          <p class="policy-text">
+            To reserve your appointment, a $20 non-refundable deposit is
+            required. The remaining balance is due at the time of service via
+            Cash, CashApp, ApplePay, or Zelle only.
+          </p>
+        </div>
+
+        <div class="policy-card">
+          <h3 class="policy-title">RESCHEDULING</h3>
+          <p class="policy-text">
+            Appointments may be rescheduled up to 24 hours in advance. A $15 fee
+            applies for changes made within 24 hours of your booking.
+          </p>
+        </div>
+
+        <div class="policy-card">
+          <h3 class="policy-title">LATE ARRIVAL</h3>
+          <p class="policy-text">
+            Clients arriving over 15 minutes late may be charged a $10 late fee
+            or required to reschedule accordingly. Please communicate any delays
+            immediately.
+          </p>
+        </div>
+
+        <div class="policy-card">
+          <h3 class="policy-title">CANCELLATION</h3>
+          <p class="policy-text">
+            Cancellations made less than 24 hours in advance will incur a $25
+            fee. Deposits remain non-refundable in all cases. No exceptions.
+          </p>
+        </div>
       </section>
 
-      <!-- Footer -->
       <footer class="footer">
-        <div class="social-links">
-          <a href="https://facebook.com/khiskreationz" aria-label="Facebook"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a href="https://instagram.com/kreationzbykhi" aria-label="Instagram"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-        </div>
-        <p class="footer-text">
-          The Beauty Gazette • A Publication of Excellence
-        </p>
-        <p class="footer-tagline">
-          ✦ Bringing Elegance & Confidence to Life Since 1938 ✦
-        </p>
-        <p class="copyright">
-          © 2025 The Beauty Gazette. All Rights Reserved. Unauthorized
-          reproduction strictly prohibited.
+        <p>© 2024 Kreationz By Khi | All Rights Reserved</p>
+        <p>
+          BOOK ONLINE:
+          <a href="https://yourbookinglink.com">YourBookingLink.com</a>
         </p>
       </footer>
-    </div>
+    </main>
 
     <script>
-      // Smooth scroll with offset for fixed nav
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            const offsetTop = target.offsetTop - 70;
-            window.scrollTo({
-              top: offsetTop,
-              behavior: "smooth",
-            });
-          }
-        });
-      });
-
-      // Random flicker effect for authenticity
-      setInterval(() => {
-        if (Math.random() > 0.97) {
-          document.body.style.opacity = "0.94";
-          setTimeout(() => {
-            document.body.style.opacity = "1";
-          }, 40);
-        }
-      }, 1500);
-
-      // Random brightness fluctuation
-      setInterval(() => {
-        if (Math.random() > 0.95) {
-          document.body.style.filter = "brightness(0.97)";
-          setTimeout(() => {
-            document.body.style.filter = "brightness(1)";
-          }, 60);
-        }
-      }, 2000);
-
-      // Mobile menu toggle
-      const mobileToggle = document.querySelector(".mobile-menu-toggle");
-      const navLinks = document.querySelector(".nav-links");
-
-      if (mobileToggle) {
-        mobileToggle.addEventListener("click", () => {
-          if (navLinks.style.display === "flex") {
-            navLinks.style.display = "none";
-          } else {
-            navLinks.style.display = "flex";
-            navLinks.style.flexDirection = "column";
-            navLinks.style.position = "absolute";
-            navLinks.style.top = "100%";
-            navLinks.style.left = "0";
-            navLinks.style.right = "0";
-            navLinks.style.background = "var(--ink-black)";
-            navLinks.style.padding = "20px";
-            navLinks.style.borderTop = "2px solid var(--aged-white)";
-          }
-        });
+      // Create sparkles dynamically
+      for (let i = 0; i < 20; i++) {
+        const sparkle = document.createElement("div");
+        sparkle.className = "sparkle";
+        // Ensure sparkles are within the body bounds
+        sparkle.style.top = Math.random() * 100 + "%";
+        sparkle.style.left = Math.random() * 100 + "%";
+        sparkle.style.animationDelay = Math.random() * 5 + "s";
+        document.body.appendChild(sparkle);
       }
-
-      // Add entrance animations
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -100px 0px",
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
-          }
-        });
-      }, observerOptions);
-
-      document
-        .querySelectorAll(
-          ".policy-card, .service-badge, .gallery-item, .info-item"
-        )
-        .forEach((el) => {
-          el.style.opacity = "0";
-          el.style.transform = "translateY(30px)";
-          el.style.transition = "all 0.6s ease-out";
-          observer.observe(el);
-        });
-
-      // Page load animation
-      window.addEventListener("load", () => {
-        document.body.style.opacity = "0";
-        setTimeout(() => {
-          document.body.style.transition = "opacity 0.5s";
-          document.body.style.opacity = "1";
-        }, 100);
-      });
     </script>
   </body>
 </html>
